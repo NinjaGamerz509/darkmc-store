@@ -4,114 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DARKMC | Store</title>
-    <link rel="stylesheet" href="css/store.css">
-</head>
 
+    <style>
+        body {
+            background: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            background: #111;
+            color: white;
+        }
+
+        .navbar a {
+            color: #00eaff;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: url("images/hero-bg.jpg") center/cover no-repeat;
+        }
+
+        .ranks-section {
+            padding: 20px;
+        }
+
+        .rank-card {
+            background: #111;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .rank-card img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #00eaff;
+            color: black;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">DARKMC</div>
 
-        <div class="nav-links">
-            <a href="index.html">About</a>
-            <a href="store.html" class="active">Store</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <!-- Hamburger (no PNG — pure CSS) -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="mobile-menu" id="mobileMenu">
+        <div>
             <a href="index.html">About</a>
             <a href="store.html">Store</a>
             <a href="contact.html">Contact</a>
+            <a href="https://discord.gg/KgKxVpw54F" target="_blank">Discord</a>
         </div>
-
-        <!-- Discord Button -->
-        <a class="discord-btn" href="https://discord.gg/KgKxVpw54F" target="_blank">
-            Discord
-        </a>
     </nav>
 
-
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
         <h1>Buy Your Rank</h1>
         <p>Select a rank below and unlock exclusive perks!</p>
     </section>
 
 
-    <!-- RANK CARDS -->
+    <!-- RANK CARDS WITH IMAGES -->
     <section class="ranks-section">
 
-        <!-- Frost -->
         <div class="rank-card">
+            <img src="images/rank-frost.png" alt="Frost Rank">
             <h3>FROST</h3>
-            <p class="price">₹200</p>
-            <p class="perks">/kits Frost • Extra perks • Cool abilities</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹200</p>
+            <p>/kits Frost • Extra perks • Cool abilities</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
-        <!-- GOD -->
         <div class="rank-card">
+            <img src="images/rank-god.png" alt="God Rank">
             <h3>GOD</h3>
-            <p class="price">₹150</p>
-            <p class="perks">/kits God • Boosted features • More rewards</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹150</p>
+            <p>/kits God • Boosted features • More rewards</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
-        <!-- VIP+ -->
         <div class="rank-card">
+            <img src="images/rank-vipplus.png" alt="VIP+ Rank">
             <h3>VIP+</h3>
-            <p class="price">₹130</p>
-            <p class="perks">/kits VIP+ • Extra bonuses</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹130</p>
+            <p>/kits VIP+ • Extra bonuses</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
-        <!-- VIP -->
         <div class="rank-card">
+            <img src="images/rank-vip.png" alt="VIP Rank">
             <h3>VIP</h3>
-            <p class="price">₹110</p>
-            <p class="perks">/kits VIP • Basic premium items</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹110</p>
+            <p>/kits VIP • Basic premium items</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
-        <!-- MVP+ -->
         <div class="rank-card">
+            <img src="images/rank-mvpplus.png" alt="MVP+ Rank">
             <h3>MVP+</h3>
-            <p class="price">₹100</p>
-            <p class="perks">/kits MVP+ • More boosts</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹100</p>
+            <p>/kits MVP+ • More boosts</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
-        <!-- MVP -->
         <div class="rank-card">
+            <img src="images/rank-mvp.png" alt="MVP Rank">
             <h3>MVP</h3>
-            <p class="price">₹80</p>
-            <p class="perks">/kits MVP • Starter perks</p>
-            <a href="https://discord.com/channels/1430887482219696149/1435644118591209624" 
-               class="buy-btn" target="_blank">Buy Now</a>
+            <p>₹80</p>
+            <p>/kits MVP • Starter perks</p>
+            <a class="buy-btn" target="_blank"
+               href="https://discord.com/channels/1430887482219696149/1435644118591209624">
+               Buy Now
+            </a>
         </div>
 
     </section>
 
 
-
     <!-- FOOTER -->
-    <footer>
-        <p>© DARKMC 2025 All rights reserved.</p>
+    <footer style="text-align:center;padding:20px;background:#000;">
+        © DARKMC 2025 All rights reserved.
     </footer>
 
-    <script src="js/store.js"></script>
 </body>
 </html>
